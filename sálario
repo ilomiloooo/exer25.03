@@ -1,0 +1,22 @@
+using System;
+
+namespace projeto
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+         
+
+            Console.WriteLine("Digite o sálario: ");
+           int salario =  int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Digite o percentual do reajuste: ");
+            double reajuste = double.Parse(Console.ReadLine());
+
+            double aumento = salario + (salario * reajuste / 100);
+
+            Console.WriteLine("O novo salario é: " + aumento);
+        }
+    }
+}
