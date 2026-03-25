@@ -1,0 +1,19 @@
+using System;
+
+namespace projeto
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Digite o número de maçãs compradas:");
+            int macas = int.Parse(Console.ReadLine());
+
+            double valorMenor12 = macas * 1.30;
+            double valorMaior12 = macas * 1.00;
+
+            Console.WriteLine("Se forem menos de 12 maçãs, o valor é: R$ " + valorMenor12);
+            Console.WriteLine("Se forem 12 ou mais maçãs, o valor é: R$ " + valorMaior12);
+        }
+    }
+}
