@@ -1,0 +1,27 @@
+using System;
+
+namespace projeto
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Console.WriteLine("Números de carros: ");
+            int numeroCarros = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Valor total das vendas: ");
+            int totalVendas = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Salário Fixo: ");
+            double salarioFixo = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Comissão: ");
+            int Comissao = int.Parse(Console.ReadLine());
+
+            double salarioFinal = salarioFixo + (numeroCarros * Comissao) + (totalVendas * 0.05);
+
+            Console.WriteLine("O salário final é: " + salarioFinal);
+        }
+    }
+}
