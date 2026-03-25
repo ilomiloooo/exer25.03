@@ -1,0 +1,34 @@
+using System;
+
+namespace projeto
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+         
+
+            Console.WriteLine("Digite o total de eleitores: ");
+           int eleitores =  int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Digite o total de votos brancos: ");
+            int brancos = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Digite o total de votos nulos: ");
+            int nulos = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Digite o total de votos válidos: ");
+            int válidos = int.Parse(Console.ReadLine());
+
+            double TotalBrancos = ((double)brancos / eleitores * 100);
+            double TotalNulos = ((double)nulos / eleitores * 100);
+            double TotalVálidos = ((double)válidos / eleitores * 100);
+
+            Console.WriteLine($"A porcentagem dos votos brancos seria: {TotalBrancos:F2}%");
+            Console.WriteLine($"A porcentagem dos votos nulos seria: {TotalNulos:F2}%");
+            Console.WriteLine($"A porcentagem dos votos válidos seria: {TotalVálidos:F2}%");
+
+
+        }
+    }
+}
